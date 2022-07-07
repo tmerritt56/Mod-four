@@ -1,0 +1,15 @@
+:root {
+    background-color:  #C8A2C8;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 5px #690e69;
+}
+
+.startPage  {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

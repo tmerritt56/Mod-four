@@ -1,4 +1,10 @@
 // code quiz
+// set up variables and questions
+var questions = [
+{
+
+}
+]
 //  Code Start button 
 //  need to have timer start when user is presented with a question 
 //  another question appears after user answers the previous one. 
