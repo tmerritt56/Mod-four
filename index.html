@@ -26,10 +26,25 @@
     <button id="4" onclick="checkanswer ('4')">4</button>
     <div id="results"></div>
     </div>
+    <!-- final score div, where you input your initials -->
     <div id="quizend">
         <div id="finalscore"></div>
         <input type="text" size="50" placeholder="Please enther your initials to save your highscore!"/>
         <button id="submitscore">Submit</button>
+    </div>
+    <!-- highscore div, where you see the highscore list -->
+    <div class="hscontainer">
+        <div id="hspage">
+            <h2 class="hsheader">User initials</h2>
+            <h2 class="hsheader">Score</h2>
+        </div>
+        <div id="hsinitials"></div>
+        <div id="hsscore"></div>
+    </div>
+    <!-- end buttons to play again or clear the highscore list -->
+    <div id="endbtns">
+        <button id="replay" onclick="replayQuiz()">Try Again?</button>
+        <button id="clearhs" onclick="clearScore()">Clear HighScore</button>
     </div>
     </div>
 <script src="./Assets/script.js"></script>
