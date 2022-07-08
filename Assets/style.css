@@ -2,14 +2,51 @@
     background-color:  #C8A2C8;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h2{
+    font-family:'Times New Roman', Times, serif;
+    margin-top: .5px;
+}
+input{
+    text-align: center;
+}
+button {
+    display:inline-block;
+    font-family:serif;
+    background-color: #690e69;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    width: 100px;
+    margin-top: 2px;
+}
 button:hover{
     background-color: black;
     color: white;
     box-shadow: 5px #690e69;
 }
+#quiz {
+    display: none;
+}
+#quizend{
+    display: none;
+}
+#hscontainer {
+    display: none;
+}
+#endbtns {
+    display: none;
+}
 
-.startPage  {
-    display: flex;
-    flex-direction: column;
+#questions{
+    color: white;
     text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: 700;
 }
