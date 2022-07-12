@@ -4,46 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/style.css">
     <title>Code Quiz</title>
+    <link rel="stylesheet" href="./Assets/style.css">
 </head>
 <body>
     <div class="container">
-        <div class="startPage">
+        <div id="startPage">
             <h1>Coding Quiz</h1>
-                <p>Before you begin the quiz, it is timed. If you get an answer wrong time will be subtracted from the clock. Once you have answered all the questions or the time has run out, you will see your score and be able to save your score and initials to the highscore board.</p>
-                    <button id="Startbtn">Start Quiz</button>
-                    <!-- code in html for start quiz button. -->
+                <h2>Before you begin the quiz, it is timed. If you get an answer wrong time will be subtracted from the clock. Once you have answered all the questions or the time has run out, you will see your score and be able to save your score and initials to the highscore board.</h2>
+                <button id="Start" class="btn">Start Quiz</button>
+                <button id ="startHighscore" class="btn" onclick="showHighscore()">High Scores</button>
         </div>
         <!-- div for quiz -->
     <div id="quiz">
         <div id="time">Time Remaining:</div>
-        <div id="questions"><p>Question Placeholder</p></div>
-    <button id="1" onclick="checkanswer ('1')">1</button>
-    <button id="2" onclick="checkanswer ('2')">2</button>
-    <button id="3" onclick="checkanswer ('3')">3</button>
-    <button id="4" onclick="checkanswer ('4')">4</button>
-    <div id="results"></div>
+        <div id="questions"><p>Questions Placeholder</p></div>
+            <button id="1" onclick="checkAnswer('1')">A</button>
+             <button id="2" onclick="checkAnswer('2')">B</button>
+            <button id="3" onclick="checkAnswer('3')">C</button>
+            <button id="4" onclick="checkAnswer('4')">D</button>
+        <div id="result"></div>
     </div>
     <!-- final score div, where you input your initials -->
     <div id="quizend">
         <div id="finalscore"></div>
         <input type="text" size="50" placeholder="Please enther your initials to save your highscore!" name="initials" id="initials"/>
-        <button id="submitscore">Submit</button>
+        <button id="submitscore" class="btn">Submit</button>
     </div>
     <!-- highscore div, where you see the highscore list -->
     <div id="hscontainer">
         <div id="hspage">
-            <h2 id="hsinitials">User initials:</h2>
-            <h2 id="hsscore">Score:</h2>
-        </div>
+            <div id="highscoretitle">
+            <h3>User initials:</h3>
+            <h3>Score:</h3>
+            </div>
         <div id="hsinitials"></div>
         <div id="hsscore"></div>
     </div>
     <!-- end buttons to play again or clear the highscore list -->
     <div id="endbtns">
-        <button id="replay" onclick="replayQuiz()">Try Again?</button>
-        <button id="clearhs" onclick="clearScore()">Clear HighScore</button>
+        <button id="replay" class="btn" onclick="playAgain()">Try Again?</button>
+        <button id="clearhs" class="btn" onclick="clearScore()">Clear HighScore</button>
     </div>
     </div>
 <script src="./Assets/script.js"></script>

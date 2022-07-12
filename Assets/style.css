@@ -1,21 +1,36 @@
 :root {
     background-color:  #C8A2C8;
 }
-
-body {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+li {
+    padding-bottom: 4px;
+    color: #690e69;
+    list-style-type: none;
+    text-shadow: 2px 1.5px 4px black;
 }
 
 h2{
     font-family:'Times New Roman', Times, serif;
     margin-top: .5px;
 }
+p {
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+}
 input{
     text-align: center;
 }
-button {
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    max-width: 80rem;
+}
+.btn {
     display:inline-block;
     font-family:serif;
     background-color: #690e69;
@@ -25,28 +40,78 @@ button {
     width: 100px;
     margin-top: 2px;
 }
-button:hover{
+.btn:hover{
     background-color: black;
     color: white;
     box-shadow: 5px #690e69;
 }
+#time {
+    background-color: #690e69;
+    color: #C8A2C8;
+    font-size: large;
+    text-align: center;
+}
+#startpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #quiz {
     display: none;
 }
+#results {
+    display: none;
+}
 #quizend{
+    text-align: center;
     display: none;
+    flex-direction: column;
+    align-items: center;
 }
-#hscontainer {
-    display: none;
-}
-#endbtns {
-    display: none;
-}
-
 #questions{
-    color: white;
+    color:#690e69;
     text-align: center;
     font-size: 40px;
     font-family: cursive;
     font-weight: 700;
+}
+#hscontainer {
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hspage {
+    display: none;
+    width: 50%;
+    border: solid;
+    border-color: #690e69;
+    background-color: #C8A2C8;
+    border-bottom-style:outset;
+}
+
+#highscoretitle {
+    display: flex;
+    justify-content:space-around;
+    border-bottom-style:groove;
+    margin-bottom: .5rem;
+    background-color: #690e69;
+    color: #C8A2C8;
+}
+#hsinitials {
+    display: inline-block;
+    padding-left: 50px;
+}
+#hsscore {
+    padding-right: 8rem;
+    float: right;
+}
+#finalscore{
+    padding-bottom: .5rem;
+}
+#endbtns {
+    display: none;
 }
