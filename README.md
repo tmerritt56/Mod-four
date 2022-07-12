@@ -9,7 +9,7 @@
 - The purpose of this is to test new coders and their skills via a quiz. 
 
 ### Screenshot
-
+![initial page](./Assets/Starting%20page.PNG)
 
 #### Link to finished page 
-https://github.com/tmerritt56/Mod-four
+<a href= "https://tmerritt56.github.io/Mod-four/" target="blank">Code Quiz</a>
